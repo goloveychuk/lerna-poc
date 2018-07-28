@@ -1,21 +1,28 @@
-0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+0 silly argv { _: [ 'publish' ],
+0 silly argv   progress: true,
+0 silly argv   sort: true,
+0 silly argv   ci: false,
+0 silly argv   loglevel: 'info',
+0 silly argv   lernaVersion: '3.0.0-rc.0',
+0 silly argv   '$0': 'node_modules/.bin/lerna' }
+1 info version 3.0.0-rc.0
 2 verbose rootPath /Users/badim/work/lerna-poc
-3 info version 2.11.0
-4 silly isInitialized
-5 silly isInitialized true
-6 silly existsSync /Users/badim/work/lerna-poc/VERSION
-7 silly initialize attempt
-8 info current version 0.0.0
-9 silly isDetachedHead
-10 silly getCurrentBranch
-11 error initialize caught error
-12 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-12 error Use '--' to separate paths from revisions, like this:
-12 error 'git <command> [<revision>...] -- [<file>...]'
-12 error
-12 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-12 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-12 error     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:202:59)
-12 error     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:45:37)
-12 error     at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:260:36)
+3 info current version 1.0.5
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly currentBranch
+7 verbose currentBranch master
+8 silly isBehindUpstream
+9 error Error: Command failed: git rev-list --left-right --count origin/master...master
+9 error fatal: ambiguous argument 'origin/master...master': unknown revision or path not in the working tree.
+9 error Use '--' to separate paths from revisions, like this:
+9 error 'git <command> [<revision>...] -- [<file>...]'
+9 error
+9 error
+9 error     at makeError (/Users/badim/work/lerna-poc/node_modules/execa/index.js:172:9)
+9 error     at Function.module.exports.sync (/Users/badim/work/lerna-poc/node_modules/execa/index.js:341:15)
+9 error     at Object.execSync (/Users/badim/work/lerna-poc/node_modules/@lerna/child-process/index.js:22:16)
+9 error     at countLeftRight (/Users/badim/work/lerna-poc/node_modules/@lerna/publish/lib/is-behind-upstream.js:30:31)
+9 error     at isBehindUpstream (/Users/badim/work/lerna-poc/node_modules/@lerna/publish/lib/is-behind-upstream.js:14:27)
+9 error     at PublishCommand.initialize (/Users/badim/work/lerna-poc/node_modules/@lerna/publish/index.js:106:11)
+9 error     at Promise.resolve.then (/Users/badim/work/lerna-poc/node_modules/@lerna/command/index.js:242:24)
