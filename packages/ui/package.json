@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/analytics-ui",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "scripts": {
     "watch": "bash ../../scripts/watch.bash",
