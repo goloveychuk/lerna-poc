@@ -1,11 +1,12 @@
 {
-  "name": "@lerna-poc/analytics-spa-spa",
+  "name": "@lerna-poc/analytics-spa",
   "version": "1.0.14",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "lerna run build && lerna run watch --parallel",
-    "build": "lerna run build",
+    "clean": "lerna exec 'rm -rf dist'",
+    "watch-all": "npm run build-all && lerna exec 'tsc --pretty --watch' --parallel",
+    "build-all": "npm run clean && lerna exec 'tsc --pretty'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

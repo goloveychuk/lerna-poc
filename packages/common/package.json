@@ -3,8 +3,6 @@
   "version": "1.0.12",
   "description": "",
   "scripts": {
-    "watch": "bash ../../scripts/watch.bash",
-    "build": "bash ../../scripts/build.bash",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
