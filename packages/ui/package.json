@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/analytics-ui",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "scripts": {
     "watch": "bash ../../scripts/watch.bash",
@@ -12,6 +12,6 @@
   "types": "dist/index.d.ts",
   "license": "ISC",
   "dependencies": {
-    "@lerna-poc/analytics-common": "^1.0.8"
+    "@lerna-poc/analytics-common": "1.0.8"
   }
 }
