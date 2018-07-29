@@ -2,13 +2,16 @@
   "name": "@lerna-poc/analytics-ui",
   "version": "1.0.7",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "watch": "bash ../../scripts/watch.bash",
+    "build": "bash ../../scripts/build.bash",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "a",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "ISC",
   "dependencies": {
-    "@lerna-poc/analytics-common": "file:../common"
+    "@lerna-poc/analytics-common": "1.0.6"
   }
 }

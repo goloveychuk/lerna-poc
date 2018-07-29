@@ -2,14 +2,17 @@
   "name": "@lerna-poc/analytics-spa",
   "version": "1.0.7",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "watch": "bash ../../scripts/watch.bash",
+    "build": "bash ../../scripts/build.bash",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@lerna-poc/analytics-common": "file:../common",
-    "@lerna-poc/analytics-ui": "file:../ui"
+    "@lerna-poc/analytics-common": "1.0.6",
+    "@lerna-poc/analytics-ui": "1.0.7"
   }
 }
