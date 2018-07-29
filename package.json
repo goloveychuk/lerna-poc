@@ -8,6 +8,7 @@
     "watch-all": "npm run build-all && lerna exec 'tsc --pretty --watch' --parallel",
     "build-all": "npm run clean && lerna exec 'tsc --pretty'",
     "publish": "lerna publish --exact",
+    "publish-ci": "lerna publish --exact --canary --cd-version prerelease --yes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
