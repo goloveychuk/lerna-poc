@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/analytics-ui",
-  "version": "1.0.13",
+  "version": "1.0.15",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
   "types": "dist/index.d.ts",
   "license": "ISC",
   "dependencies": {
-    "@lerna-poc/analytics-common": "1.0.12"
+    "@lerna-poc/analytics-common": "1.0.15"
   },
   "gitHead": "6b3d74f6dc44d477846211e873d4c5ebd4b056a8"
 }
