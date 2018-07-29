@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/analytics-spa",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@lerna-poc/analytics-common": "1.0.15",
-    "@lerna-poc/analytics-ui": "1.0.15",
+    "@lerna-poc/analytics-ui": "1.0.16",
     "lerna": "^3.0.0-rc.0",
     "typescript": "^2.9.2"
   }
