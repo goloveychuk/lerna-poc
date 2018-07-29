@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/analytics-spa",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "scripts": {
     "watch": "bash ../../scripts/watch.bash",
@@ -12,7 +12,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@lerna-poc/analytics-common": "1.0.8",
-    "@lerna-poc/analytics-ui": "1.0.9"
+    "@lerna-poc/analytics-common": "^1.0.11",
+    "@lerna-poc/analytics-ui": "^1.0.11"
   }
 }
