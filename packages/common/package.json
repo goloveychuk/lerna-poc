@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/analytics-common",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "",
   "scripts": {
     "watch": "bash ../../scripts/watch.bash",
@@ -10,5 +10,6 @@
   "author": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "6b3d74f6dc44d477846211e873d4c5ebd4b056a8"
 }
